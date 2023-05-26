@@ -12,9 +12,7 @@
 #include "WorldBuilder.h"
 
 
-WorldBuilder::WorldBuilder() : gameState(std::make_unique<GameState>()){
-
-};
+WorldBuilder::WorldBuilder() : gameState(std::make_unique<GameState>()){};
 
 void WorldBuilder::createRoom(const std::string& name, const std::string& description) {
     std::shared_ptr<Room> newRoom = GameObjectFactory::createRoom(name, description);
