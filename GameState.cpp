@@ -57,6 +57,7 @@ GameObject *GameState::getObject(const std::string & currentObject) {
     }
 }
 
+//Testing purposes
 void GameState::printGameState() const {
     for (const auto& [name, object] : gameDictionary) {
         std::cout << name << ": " << object->getDescription() << std::endl;

@@ -21,7 +21,7 @@ std::string Room::getDescription() const {
         }
     }
 
-    return fullDescription;
+    return description;
 }
 
 Room::Room(const std::string &n, const std::string &d, std::shared_ptr<Command> c) : Location(n, d, std::move(c)) {}
@@ -49,13 +49,10 @@ void Room::addItem(Item* item){
     items.push_back(item);
 }
 
-bool Room::removeItem(const std::string& item) {
-    auto it = std::find_if(items.begin(), items.end(), [&item](const Item* obj) {
-        return obj->getName() == item;
-    });
+bool Room::removeItem(Item* item) {
+    auto it = std::find(items.begin(), items.end(), item);
 
     if (it != items.end()) {
-        delete *it;
         items.erase(it);
         return true;
     } else {
@@ -72,7 +69,11 @@ Item* Room::getItem(const std::string& item) {
         return *it;
     } else {
         // Return a special value, such as a NullItem object
-        return new NullItem(); // Create and return a NullItem object
+        return nullptr;
     }
+}
+
+int Room::inventorySize() {
+    return items.size();
 };
 //Item* Room::retrieveItem(const std::string&);

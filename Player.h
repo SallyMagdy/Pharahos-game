@@ -22,17 +22,22 @@ public:
     void setCurrentRoom(Room*);
 
     Room* getCurrentRoom() const;
-
+    void addItem(Item* item);
+    Item* retrieveItem(const std::string&);
     Player(const Player &) = delete;
-
+    bool removeItem(Item* item);
     Player &operator=(const Player &) = delete;
+    int inverntorySize();
+    void checkInventory();
 
 private:
     static Player *playerInstance;
     Room* currentRoom;
-
+    std::vector<Item*> inventory;
     Player() : Character("You", "You are a person, alike in dignity to any other, but uniquely you."),
                currentRoom(new NullRoom()) {}
+
+
 };
 
 #endif //ZOORK_PLAYER_H

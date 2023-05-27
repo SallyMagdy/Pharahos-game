@@ -23,16 +23,24 @@ void WorldBuilder::createRoom(const std::string& name, const std::string& descri
     gameState->addObject(lower_case_name, newRoom);
 }
 
-void WorldBuilder::createItem(const std::string& name, const std::string& description, const std::string& roomName) {
-    auto newItem = GameObjectFactory::createItem(name, description, roomName);
+void WorldBuilder::createItem(const std::string& name, const std::string& description, const std::string& roomName, bool isMovable) {
+    auto newItem = GameObjectFactory::createItem(name, description, isMovable);
     auto itemLocation = gameState->getCurrentRoom(roomName);
     itemLocation->addItem(newItem.get());
-    std::string lower_case_name = "";
-    for(auto s:name){
-        lower_case_name += tolower(s);
-    }
-    gameState->addObject(lower_case_name, newItem);
+    gameState->addObject(name, newItem);
 }
+
+void WorldBuilder::createItem(const std::string& name, const std::string& description,const std::string& useText,const std::string& openText, const std::string& roomName, bool isMovable) {
+    auto newItem = GameObjectFactory::createItem(name, description, useText, openText, isMovable);
+    auto itemLocation = gameState->getCurrentRoom(roomName);
+    itemLocation->addItem(newItem.get());
+    gameState->addObject(name, newItem);
+}
+
+//create item with command
+//void WorldBuilder::createItem(const std::string& name, const std::string& description, const std::string& roomName, const std::string & commandName) {
+//    auto newItem = GameObjectFactory::createItem(name, description, roomName, commandName);
+//}
 
 void WorldBuilder::createPassage(const std::string &  roomFrom, const std::string &  roomTo, const std::string & direction, bool bidirectional){
     auto roomFromItem  = gameState->getCurrentRoom(roomFrom);
@@ -54,3 +62,5 @@ void WorldBuilder::setStartRoom(const std::string& name){
 std::unique_ptr<GameState> WorldBuilder::build() {
     return std::move(gameState);
 }
+
+

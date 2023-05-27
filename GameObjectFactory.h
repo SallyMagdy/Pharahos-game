@@ -17,7 +17,9 @@ public:
     explicit GameObjectFactory();
     static std::shared_ptr<Room> createRoom(const std::string&, const std::string&);
 
-    static std::shared_ptr<Item> createItem(const std::string&, const std::string&, const std::string&);
+    static std::shared_ptr<Item> createItem(const std::string&, const std::string&, bool );
+    static std::shared_ptr<Item> createItem(const std::string&, const std::string&, const std::string&, const std::string&, bool);
+//    static std::shared_ptr<Item> createItem(const std::string&, const std::string&, const std::string&, const std::string&);
 
     static std::shared_ptr<Character> createCharacter(const std::string&, const std::string&);
 

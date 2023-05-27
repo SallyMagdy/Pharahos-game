@@ -21,9 +21,10 @@ public:
     Room(const std::string &, const std::string &, std::shared_ptr<Command>);
     std::string getDescription() const override;
     void addItem(Item*);
-    bool removeItem(const std::string&);
+    int inventorySize();
+    bool removeItem(Item*);
     Item* getItem(const std::string&);
-//    Item* retrieveItem(const std::string&);
+
 //    void addCharacter(Character*);
 //    void removeCharacter(const std::string&);
 //    Character* getCharacter(const std::string&);

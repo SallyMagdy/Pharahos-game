@@ -12,7 +12,8 @@ class WorldBuilder {
 public:
     WorldBuilder();
     void createRoom(const std::string&, const std::string&);
-    void createItem(const std::string&, const std::string&, const std::string&);
+    void createItem(const std::string&, const std::string&, const std::string&, bool);
+    void createItem(const std::string&, const std::string&, const std::string&, const std::string&, const std::string&, bool);
     void createPassage(const std::string &, const std::string &, const std::string &, bool);
 //    void createCharacter(const std::string&, const std::string&);
     void setStartRoom(const std::string&);

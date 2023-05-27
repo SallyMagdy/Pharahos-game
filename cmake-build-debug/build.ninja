@@ -157,6 +157,18 @@ build CMakeFiles/ZOOrk.dir/NullItem.cpp.obj: CXX_COMPILER__ZOOrk_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\ZOOrk.dir
   OBJECT_FILE_DIR = CMakeFiles\ZOOrk.dir
 
+build CMakeFiles/ZOOrk.dir/ItemDefaultUseCommand.cpp.obj: CXX_COMPILER__ZOOrk_Debug C$:/Users/Sally/OneDrive$ -$ LA$ TROBE$ UNIVERSITY/Semester$ 5/PSD/assignment/assignment3/ZOOrk-20230508/ZOOrk/ItemDefaultUseCommand.cpp || cmake_object_order_depends_target_ZOOrk
+  DEP_FILE = CMakeFiles\ZOOrk.dir\ItemDefaultUseCommand.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\ZOOrk.dir
+  OBJECT_FILE_DIR = CMakeFiles\ZOOrk.dir
+
+build CMakeFiles/ZOOrk.dir/ItemOpenCommand.cpp.obj: CXX_COMPILER__ZOOrk_Debug C$:/Users/Sally/OneDrive$ -$ LA$ TROBE$ UNIVERSITY/Semester$ 5/PSD/assignment/assignment3/ZOOrk-20230508/ZOOrk/ItemOpenCommand.cpp || cmake_object_order_depends_target_ZOOrk
+  DEP_FILE = CMakeFiles\ZOOrk.dir\ItemOpenCommand.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\ZOOrk.dir
+  OBJECT_FILE_DIR = CMakeFiles\ZOOrk.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ZOOrk
@@ -165,7 +177,7 @@ build CMakeFiles/ZOOrk.dir/NullItem.cpp.obj: CXX_COMPILER__ZOOrk_Debug C$:/Users
 #############################################
 # Link the executable ZOOrk.exe
 
-build ZOOrk.exe: CXX_EXECUTABLE_LINKER__ZOOrk_Debug CMakeFiles/ZOOrk.dir/main.cpp.obj CMakeFiles/ZOOrk.dir/Item.cpp.obj CMakeFiles/ZOOrk.dir/Character.cpp.obj CMakeFiles/ZOOrk.dir/Location.cpp.obj CMakeFiles/ZOOrk.dir/GameObject.cpp.obj CMakeFiles/ZOOrk.dir/Room.cpp.obj CMakeFiles/ZOOrk.dir/Passage.cpp.obj CMakeFiles/ZOOrk.dir/NullRoom.cpp.obj CMakeFiles/ZOOrk.dir/NullCommand.cpp.obj CMakeFiles/ZOOrk.dir/Player.cpp.obj CMakeFiles/ZOOrk.dir/RoomDefaultEnterCommand.cpp.obj CMakeFiles/ZOOrk.dir/ZOOrkEngine.cpp.obj CMakeFiles/ZOOrk.dir/PassageDefaultEnterCommand.cpp.obj CMakeFiles/ZOOrk.dir/NullPassage.cpp.obj CMakeFiles/ZOOrk.dir/WorldBuilder.cpp.obj CMakeFiles/ZOOrk.dir/GameState.cpp.obj CMakeFiles/ZOOrk.dir/GameObjectFactory.cpp.obj CMakeFiles/ZOOrk.dir/NullItem.cpp.obj
+build ZOOrk.exe: CXX_EXECUTABLE_LINKER__ZOOrk_Debug CMakeFiles/ZOOrk.dir/main.cpp.obj CMakeFiles/ZOOrk.dir/Item.cpp.obj CMakeFiles/ZOOrk.dir/Character.cpp.obj CMakeFiles/ZOOrk.dir/Location.cpp.obj CMakeFiles/ZOOrk.dir/GameObject.cpp.obj CMakeFiles/ZOOrk.dir/Room.cpp.obj CMakeFiles/ZOOrk.dir/Passage.cpp.obj CMakeFiles/ZOOrk.dir/NullRoom.cpp.obj CMakeFiles/ZOOrk.dir/NullCommand.cpp.obj CMakeFiles/ZOOrk.dir/Player.cpp.obj CMakeFiles/ZOOrk.dir/RoomDefaultEnterCommand.cpp.obj CMakeFiles/ZOOrk.dir/ZOOrkEngine.cpp.obj CMakeFiles/ZOOrk.dir/PassageDefaultEnterCommand.cpp.obj CMakeFiles/ZOOrk.dir/NullPassage.cpp.obj CMakeFiles/ZOOrk.dir/WorldBuilder.cpp.obj CMakeFiles/ZOOrk.dir/GameState.cpp.obj CMakeFiles/ZOOrk.dir/GameObjectFactory.cpp.obj CMakeFiles/ZOOrk.dir/NullItem.cpp.obj CMakeFiles/ZOOrk.dir/ItemDefaultUseCommand.cpp.obj CMakeFiles/ZOOrk.dir/ItemOpenCommand.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ZOOrk.dir

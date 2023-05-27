@@ -5,4 +5,4 @@
 #include "NullCommand.h"
 #include "NullItem.h"
 
-NullItem::NullItem() : Item("Nothing", "This is absolutely nothing.", std::make_shared<NullCommand>()) {}
+NullItem::NullItem() : Item("Nothing", "This is absolutely nothing.", false) {}
